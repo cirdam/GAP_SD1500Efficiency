@@ -135,12 +135,21 @@ The next step is to analyze the dependency of the efficiency with the zenith ang
 
 In order to see the functional form of $E_0(\theta)$ and $b(\theta)$ we propose a preliminary analysis where the efficiency is measured for each $\sin^2(\theta)$ bin separately and then the parameters are plotted, as is shown in figure \ref{fig:parameters}. It can be seen a quadratic dependency of $E_0$ on $\sin^2(\theta)$ while for $b(\theta)$, two models are proposed, one of constant $b$ and other linear in $\sin^2(\theta)$. In consequence two parametrizations of the efficiency as a function of the energy and the zenith angle are proposed. One of 4 parameters with $E_0(\theta)=p_0 + p_1\sin^2(\theta) + p_2\sin^4(\theta)$ and $b=b_0$ and one of 5 parameters with the same $E_0$ but $b=b_0+b_1\sin^2(\theta)$. With the fitted parameters for the single bins as initial values, we made a simultaneous $\chi^2$ fit of the efficiency as a function of the energy and the zenith angle for the 4 parameter and the 5 parameter models. Results are shown in \ref{tab:param}.
 
+\begin{figure}[]
+    \begin{center}
+        \includegraphics[width=0.7\textwidht]{plots/singleZenithFit.pdf}
+        \caption{Efficiency for the $56.0^{\circ}-60.0^{\circ}$ zenith angle bin together with the preliminary fit and the 4 and 5 parameter models.
+        \label{fig:parameters}}
+    \end{center}
+\end{figre}
+
 In order to see our results, we evaluated the fits in the center of the zenith angle bin. \ref{fig:zenithSingle} shows the efficiency as a function of the energy for the bin $56.0 \leq \theta \leq 60.0$ together with the preliminary fit and the 4 and 5 parameter model. It can be seen that for this bin, the 5 parameters model offers a better description of the data. \ref{fig:zenith} shows the efficiency and the three fittings for all the twelve zenith bins. For the vertical bins, both the 4 and 5 parameter fits show accordance with the measured efficiency but for the more inclined events, the 5 parameter description adjust better the data. In consequence, our proposed model of the efficiency is:
 
 \begin{equation}
 \varepsilon(E,\theta)=\frac{1}{2}\left(1+\mathrm{erf}\left(\frac{\log_{10}(E/\mathrm{eV})-(p_0+p_1\sin^2(\theta)+p_2\sin^4(\theta))}{b_0+b_1\sin^2(\theta)}\right)\right)
 \label{eqn:fitting}
 \end{equation}
+
 with $p_0=18.03$ $p_1=-0.91$, $p_2=1.45$, $b_0=0.336$, $b_1=-0.068$.
 
 \begin{figure}[]
