@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.28)  20 SEP 2021 12:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.28)  23 SEP 2021 14:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -525,112 +525,106 @@ Package pdftex.def Info: plots/SD.pdf  used on input line 88.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./plots/SD.pdf>]
-<plots/energy45.pdf, id=47, 569.12625pt x 388.45125pt>
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 116.
+
+<plots/energy45.pdf, id=54, 569.12625pt x 388.45125pt>
 File: plots/energy45.pdf Graphic file (type pdf)
 <use plots/energy45.pdf>
-Package pdftex.def Info: plots/energy45.pdf  used on input line 113.
+Package pdftex.def Info: plots/energy45.pdf  used on input line 118.
 (pdftex.def)             Requested size: 273.14923pt x 186.44261pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[2 <./plots/energy45.pdf, page is rotated 90 degrees>]
-<plots/allZenith.pdf, id=102, 569.12625pt x 388.45125pt>
+[2]
+<plots/allZenith.pdf, id=68, 569.12625pt x 388.45125pt>
 File: plots/allZenith.pdf Graphic file (type pdf)
 <use plots/allZenith.pdf>
 Package pdftex.def Info: plots/allZenith.pdf  used on input line 138.
 (pdftex.def)             Requested size: 273.14923pt x 186.44261pt.
- [3 <./plots/allZenith.pdf, page is rotated 90 degrees>]
-<plots/E0.pdf, id=160, 569.12625pt x 388.45125pt>
+ [3 <./plots/energy45.pdf, page is rotated 90 degrees> <./plots/allZenith.pdf, 
+page is rotated 90 degrees>]
+<plots/E0.pdf, id=164, 569.12625pt x 388.45125pt>
 File: plots/E0.pdf Graphic file (type pdf)
 <use plots/E0.pdf>
 Package pdftex.def Info: plots/E0.pdf  used on input line 172.
 (pdftex.def)             Requested size: 223.07211pt x 152.25406pt.
-<plots/b.pdf, id=161, 569.12625pt x 388.45125pt>
+<plots/b.pdf, id=165, 569.12625pt x 388.45125pt>
 File: plots/b.pdf Graphic file (type pdf)
 <use plots/b.pdf>
 Package pdftex.def Info: plots/b.pdf  used on input line 173.
 (pdftex.def)             Requested size: 223.07211pt x 152.25406pt.
-<plots/singleZenithFit.pdf, id=164, 569.12625pt x 388.45125pt>
+<plots/singleZenithFit.pdf, id=168, 569.12625pt x 388.45125pt>
 File: plots/singleZenithFit.pdf Graphic file (type pdf)
 <use plots/singleZenithFit.pdf>
 Package pdftex.def Info: plots/singleZenithFit.pdf  used on input line 184.
 (pdftex.def)             Requested size: 273.14923pt x 186.44261pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<plots/Surface.pdf, id=165, 569.12625pt x 388.45125pt>
+ [4 <./plots/E0.pdf, page is rotated 90 degrees> <./plots/b.pdf, page is rotate
+d 90 degrees>]
+<plots/Surface.pdf, id=268, 569.12625pt x 388.45125pt>
 File: plots/Surface.pdf Graphic file (type pdf)
 <use plots/Surface.pdf>
-Package pdftex.def Info: plots/Surface.pdf  used on input line 193.
+Package pdftex.def Info: plots/Surface.pdf  used on input line 203.
 (pdftex.def)             Requested size: 273.14923pt x 186.44261pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4 <./plots/E0.pdf, page is rotated 90 degrees> <./plots/b.pdf, page is rotated
- 90 degrees>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 209.
-
-[5 <./plots/singleZenithFit.pdf, page is rotated 90 degrees> <./plots/Surface.p
-df, page is rotated 90 degrees>]
-<plots/NewCut.pdf, id=359, 569.12625pt x 388.45125pt>
+ [5 <./plots/singleZenithFit.pdf, page is rotated 90 degrees> <./plots/Surface.
+pdf, page is rotated 90 degrees>]
+<plots/NewCut.pdf, id=363, 569.12625pt x 388.45125pt>
 File: plots/NewCut.pdf Graphic file (type pdf)
 <use plots/NewCut.pdf>
-Package pdftex.def Info: plots/NewCut.pdf  used on input line 234.
+Package pdftex.def Info: plots/NewCut.pdf  used on input line 236.
 (pdftex.def)             Requested size: 318.66948pt x 217.51343pt.
- [6 <./plots/NewCut.pdf, page is rotated 90 degrees>]
-<plots/spectrum.pdf, id=409, 569.12625pt x 388.45125pt>
+
+[6 <./plots/NewCut.pdf, page is rotated 90 degrees>]
+<plots/spectrum.pdf, id=413, 569.12625pt x 388.45125pt>
 File: plots/spectrum.pdf Graphic file (type pdf)
 <use plots/spectrum.pdf>
-Package pdftex.def Info: plots/spectrum.pdf  used on input line 251.
+Package pdftex.def Info: plots/spectrum.pdf  used on input line 256.
 (pdftex.def)             Requested size: 318.66948pt x 217.51343pt.
  [7 <./plots/spectrum.pdf, page is rotated 90 degrees>]
-<plots/NewDifference.pdf, id=462, 569.12625pt x 388.45125pt>
+<plots/NewDifference.pdf, id=466, 569.12625pt x 388.45125pt>
 File: plots/NewDifference.pdf Graphic file (type pdf)
 <use plots/NewDifference.pdf>
-Package pdftex.def Info: plots/NewDifference.pdf  used on input line 263.
+Package pdftex.def Info: plots/NewDifference.pdf  used on input line 268.
 (pdftex.def)             Requested size: 318.66948pt x 217.51343pt.
  [8 <./plots/NewDifference.pdf, page is rotated 90 degrees>]
-<plots/EfficiencyZenith.pdf, id=512, 532.99126pt x 739.76375pt>
+<plots/EfficiencyZenith.pdf, id=516, 532.99126pt x 739.76375pt>
 File: plots/EfficiencyZenith.pdf Graphic file (type pdf)
 <use plots/EfficiencyZenith.pdf>
-Package pdftex.def Info: plots/EfficiencyZenith.pdf  used on input line 282.
+Package pdftex.def Info: plots/EfficiencyZenith.pdf  used on input line 287.
 (pdftex.def)             Requested size: 455.71227pt x 632.50047pt.
 
 Overfull \vbox (9.29404pt too high) has occurred while \output is active []
 
 
 [9 <./plots/EfficiencyZenith.pdf>]
-<plots/EfficiencyZenithNew.pdf, id=561, 532.99126pt x 739.76375pt>
+<plots/EfficiencyZenithNew.pdf, id=565, 532.99126pt x 739.76375pt>
 File: plots/EfficiencyZenithNew.pdf Graphic file (type pdf)
 <use plots/EfficiencyZenithNew.pdf>
-Package pdftex.def Info: plots/EfficiencyZenithNew.pdf  used on input line 289.
+Package pdftex.def Info: plots/EfficiencyZenithNew.pdf  used on input line 294.
 
 (pdftex.def)             Requested size: 455.71227pt x 632.50047pt.
  (./gap_2021_XX.bbl [10 <./plots/EfficiencyZenithNew.pdf>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 298.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 303.
  [11
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 298.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 303.
  (./gap_2021_XX.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 298.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 298.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 303.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 303.
 Package rerunfilecheck Info: File `gap_2021_XX.out' has not changed.
-(rerunfilecheck)             Checksum: 391246052A0808833B3DC73A2AD29757;350.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 298.
+(rerunfilecheck)             Checksum: 3EF0DDC1A4B4C84E91E8B4742FAE5A76;352.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 303.
  ) 
 Here is how much of TeX's memory you used:
- 9832 strings out of 481239
- 157585 string characters out of 5920377
+ 9835 strings out of 481239
+ 157615 string characters out of 5920377
  445740 words of memory out of 5000000
- 24868 multiletter control sequences out of 15000+600000
+ 24870 multiletter control sequences out of 15000+600000
  541355 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  34i,12n,45p,1320b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -646,10 +640,10 @@ s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 s/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on gap_2021_XX.pdf (11 pages, 554595 bytes).
+Output written on gap_2021_XX.pdf (11 pages, 554801 bytes).
 PDF statistics:
- 672 PDF objects out of 1000 (max. 8388607)
- 354 compressed objects within 4 object streams
- 40 named destinations out of 1000 (max. 500000)
+ 676 PDF objects out of 1000 (max. 8388607)
+ 358 compressed objects within 4 object streams
+ 41 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

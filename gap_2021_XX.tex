@@ -59,7 +59,7 @@
 
 %TODO Include GAP number before submitting
 
-\title{\textbf{Measurement of the efficiency of the SD1500 with the SD750}}
+\title{\textbf{Measurement of the SD1500 efficiency with the SD750}}
 
 
 
@@ -67,48 +67,53 @@
 \author{Diego Ravignani}
 \affil{\scriptsize ITeDA (CNEA, CONICET, UNSAM), Buenos Aires, Argentina}
 
-\date{\vspace{-2cm}} %removes the date :)
+\date{\vspace{-2 cm}} %removes the date :)
 
 \maketitle
 
-\vspace{2pt}
+\vspace{2 pt}
 \begin{abstract}
-In order to report the spectrum, it is required that the Surface Detector is fully efficient ($<97\%$).
-We propose a fully experimental method to determine the efficiency of the SD1500 as a function of the energy and the zenith angle using the events simultaneously detected by the SD750. The energy threshold we found is $2.5\times10^{18}\eV$ in accordance with the current used value. We also found that this threshold improves to $10^{18}\eV$ when reconstructing including the ToTd and MoPS triggers and using events with zenith angle below $45^{\circ}$.
+The SD spectrum is reported from an energy at which the trigger efficiency is greater than $97\%$.
+We propose a fully experimental method to determine the efficiency of the SD1500 as a function of the energy and the zenith angle using the events detected simultaneously with the SD750. The full efficiency energy threshold we found is $2.5\times10^{18}\eV$, in accordance with the current value used bt the collaboration. We also found that this threshold improves to $10^{18}\eV$ with the ToTd and MoPS triggers and by selecting events with zenith angle below $45^{\circ}$.
 \end{abstract}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Introduction %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
 
-The Surface Detector of the Pierre Auger Observatory consists of three hexagonal arrays of Water Cherenkov Detectors (WCD) nested one within another. The first array to be deployed was the 1500-metre detector (SD1500) which consists in 1600 stations. Later, 73 stations were added between the SD1500 stations in order to form the 750-metre detector near the Cohihueco site (\cref{fig:SD}). Finally, in 2019 a third array was completed by adding 12 stations with a separation of 433 metres (SD-433) to form a 7 hexagon array in order to reach lower energies. 
+The Surface Detector of the Pierre Auger Observatory consists of three nested triangular arrays of Water Cherenkov Detectors (WCD). The first array to be deployed was the SD1500 which consists in 1600 stations. Later, stations were added among the SD1500 stations to form the SD750 near the Cohihueco site (\cref{fig:SD}). Finally, in 2019 a third array was completed by adding stations with a separation of 433 metres to form the SD433 array of 19 stations to reach lower energies. 
 
 \begin{figure}[]
     \begin{center}
         \includegraphics[width=0.5\textwidth]{plots/SD.pdf}  
-        \caption{Schematic view of the 1500-metre surface detector (SD1500) and the 750-metre detector(SD750) nested within.
+        \caption{Schematic view of the SD1500 and the SD750 nested within.
         \label{fig:SD}}
         \vspace{-0.5cm}
     \end{center}
 \end{figure} 
 
-In order to have an accurate measurement of the spectrum, Auger requires for the detector to be fully efficient: the acceptance of the detector must be independent of the mass and energy of the primary cosmic ray. The full efficiency threshold used for practical purposes is $97\%$.
+To measure the spectrum accurately, Auger requires the detector to be fully efficient: the acceptance of the detector must be independent of the mass and energy of the primary cosmic ray. The full efficiency threshold used for practical purposes is $97\%$.
+Currently this threshold is measured using the FD by estimating the fraction of hybrid events that also satisfy the SD1500 trigger conditions \cite{Trigger}\cite{VerticalSpectrum}.
+
 Since the SD750 is nested within the SD1500 and has a lower energy threshold, we propose a completely experimental method to study the efficiency for the SD1500. For this we reconstructed the event set of the SD750 and the SD1500 using the rev 33753 of the $\mathrm{\overline{Off}\underline{line}}$ framework. 
 
 For the cosmic ray spectrum, the SD1500 uses events with zenith angle lower than $60^{\circ}$. As a consequence we also studied the zenith angle dependency of the efficiency.
 
-The spectrum is currently reported using only the ToT and TH2 station level triggers. However, in 2014 two new triggers were added \cite{Coleman}, the ToTd and MoPS. These new triggers are designed to be more sensitive to the electromagnetic component of the showers which is more present in the lower energy events. We studied the efficiency of the SD1500 including these triggers in the reconstruction in order to lower energy threshold of the detector.
+The spectrum is currently reported using only the ToT and TH2 station level triggers \cite{Trigger}. However, in 2014 the ToTd and MoPS triggers were added \cite{Coleman}. These new triggers are designed to be more sensitive to the electromagnetic component of the showers which is more present in the lower energy events. We measured the improvement in the efficiency and the consequent reduction of the energy threshold with the new triggers.
 
-% $E_0(\theta)=p_0+p_1\sin^2(\theta)+p_2\sin^4(\theta)$, $b=const.$ $b(\theta)=b_0+b_1\sin^2(\theta)$
+The idea of this work is to study the SD1500 efficiency using that the SD750 is nested within the SD1500. For WCD arrays it is expected that after a certain energy it will be able to detect the signal of the air shower produced by the primary cosmic ray. After that, the efficiency will start to increase and plateau at $100\%$ (full efficiency). The energy at which this occurs will depend on the distance between the stations, the nearer the stations, the lower the energy where full efficiency is reached. But this is a constant compromise with the exposure of the detectors, since the CR flux decays exponentially. In Auger, currently the full efficiency threshold for the SD1500 is taken at $2.5\times10^{18}\eV$ while for the SD750 is $10^{17}\eV$ \cite{SD750Spectrum}. Since the SD750 is fully efficient at the energy range where the SD1500 starts to detect, the SD750 events can be used as a reference and estimate the efficiency by seeing the subset of events mutually detected. For the SD1500 spectrum currently Auger only uses the reconstruction using the original ToT and TH2 triggers, but with the inclusion of the new more sensitive to the electromagnetic component of the shower triggers, it is expected to be able to have a fully efficient detector at a lower energy. 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Efficiency %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Efficiency of the 1500-metre array}
+\section{Measurement of the SD1500 efficiency}
 \label{sec:efficiency}
 
-The idea of this work is to study the SD1500 efficiency using that the SD750 is nested within the SD1500. For WCD arrays it is expected that after a certain energy it will be able to detect the signal of the air shower produced by the primary cosmic ray. After that, the efficiency will start to increase and plateau at $100\%$ (full efficiency). The energy at which this occurs will depend on the distance between the stations, the nearer the stations, the lower the energy where full efficiency is reached. But this is a constant compromise with the exposure of the detectors, since the CR flux decays exponencially. In Auger, currently the full efficiency threshold for the SD1500 is taken at $2.5\times10^{18}\eV$ while for the SD750 is $10^{17}\eV$ \cite{SD750Spectrum}. Since the SD750 is fully efficient at the energy range where the SD1500 starts to detect, the SD750 events can be used as a reference and estimate the efficiency by seeing the subset of events mutually detected. For the SD1500 spectrum currently Auger only uses the reconstruction using the original ToT and TH2 triggers, but with the inclusion of the new more sensitive to the electromagnetic component of the shower triggers, it is expected to be able to have a fully efficient detector at a lower energy. 
+In order to compare the efficiency both reconstructing only with the original triggers and including the new triggers, the time period of the analysis ranges from the inclusion of the new triggers, Jan 1st 2014 up to the AMIGA comm crisis, Aug 31st 2018 \cite{GAPAmigaComms}.
+
+The first step was to measure the dependence of the efficiency with the energy. To avoid mismatch between energy bins in the different arrays which would lead to wrong measurements of the efficiency, a robust estimator of the energy of an event was needed. Figure \ref{fig:energy} shows the energy of the SD1500 events as a function of the SD750 energy and the average of each bin. There is no significant bias in the energy range of interest ($10^{17.5}\eV$ to $10^{20}\eV$). As a consequence, the SD750 energy is used as the energy estimator for both detectors.
 
 % Energy vs Energy plot
-\begin{figure}[H]
+\begin{figure}[]
     \begin{center}
         \includegraphics[width=0.6\textwidth]{plots/energy45.pdf}  
         \caption{Energy measured by the SD1500 as a function of the SD750 energy. In red it can be seen the identity function and the bin average.
@@ -117,12 +122,7 @@ The idea of this work is to study the SD1500 efficiency using that the SD750 is 
     \end{center}
 \end{figure} 
 
-
-In order to compare the efficiency both reconstructing only with the original triggers and including the new triggers, the time period of the analysis ranges from the inclusion of the new triggers, Jan 1st 2014 up to the AMIGA comm crisis, Aug 31st 2018 \cite{GAPAmigaComms}.
-
-The first step was to measure the dependence of the efficiency with the energy. To avoid mismatch between energy bins in the different arrays which would lead to wrong measurements of the efficiency, a robust estimator of the energy of an event was needed. Figure \ref{fig:energy} shows the energy of the SD1500 events as a function of the SD750 energy and the average of each bin. There is no significant bias in the energy range of interest ($10^{17.5}\eV$ to $10^{20}\eV$). As a consequence, the SD750 energy is used as the energy estimator for both detectors.
-
-Since the events are independant, the probability of detecting $k$ events with the SD1500 of $n$ SD750 events with success rate $p$ is binomial. In this case, the probability $p$ corresponds to the efficiency of the detector. To estimate the efficiency we used the Maximum Likelihood Estimator (MLE). The likelihood of a binomial distribution is:
+Since the events are independent, the probability of detecting $k$ events with the SD1500 of $n$ SD750 events with success rate $p$ is binomial. In this case, the probability $p$ corresponds to the efficiency of the detector. To estimate the efficiency we used the Maximum Likelihood Estimator (MLE). The likelihood of a binomial distribution is:
 
 \begin{equation}
 L(p|n,k)=\binom{N}{k}p^k(1-p)^{n-k}
@@ -136,9 +136,9 @@ First we proceeded with the analysis of the efficiency of the SD1500 including o
 \begin{figure}[h!]
     \begin{center}
         \includegraphics[width=0.6\textwidth]{plots/allZenith.pdf}  
-        \caption{SD1500 efficiency measured with the SD750 event set. The error bars show the $95\%$ confidence Willson score interval. The $97\%$ efficiency threshold is reached at $2.5\times10^{18}\eV$.
+        \caption{SD1500 efficiency measured with the SD750 event set. The error bars show the $95\%$ confidence Wilson score interval. The $97\%$ efficiency threshold is reached at $2.5\times10^{18}\eV$.
         \label{fig:allZenith}}
-        \vspace{-0.5cm}
+        \vspace{-0.5 cm}
     \end{center}
 \end{figure}
 
@@ -171,7 +171,7 @@ The next step is to analyse the dependency of the efficiency with the zenith ang
     \begin{center}
         \includegraphics[width=0.49\textwidth]{plots/E0.pdf}
         \includegraphics[width=0.49\textwidth]{plots/b.pdf}
-        \caption{Parameter dependency with $\sin^2(\theta)$ for the preliminary fit. $E_0$ shows a quadratic dependence and $b$ is modeled by a constant function and a linear function.
+        \caption{Parameter dependency with $\sin^2(\theta)$ for the preliminary fit. $E_0$ shows a quadratic dependence and $b$ is modelled by a constant function and a linear function.
         \label{fig:parameters}}
         \vspace{-0.5cm}
     \end{center}
@@ -179,20 +179,11 @@ The next step is to analyse the dependency of the efficiency with the zenith ang
 
 In order to see the functional form of $E_0(\theta)$ and $b(\theta)$ we propose a preliminary analysis where the efficiency is measured for each $\sin^2(\theta)$ bin separately. Figure \ref{fig:parameters} shows a quadratic dependency of $E_0$ while for $b$, two models are proposed, one of constant $b$ and other linear in $\sin^2(\theta)$. In consequence two parametrizations of the efficiency as a function of the energy and the zenith angle are proposed: one of 4 parameters with $E_0(\theta)=p_0 + p_1\sin^2(\theta) + p_2\sin^4(\theta)$ and $b=b_0$ and one of 5 parameters with the same $E_0$ but $b=b_0+b_1\sin^2(\theta)$. With the fitted parameters for the single bins as initial values, we made a simultaneous $\chi^2$ fit of the efficiency for the 4 parameter and the 5 parameter models. Results are shown in \cref{tab:parameters}.
 
-\begin{figure}[h]
+\begin{figure}[t]
     \begin{center}
         \includegraphics[width=0.6\textwidth]{plots/singleZenithFit.pdf}
         \caption{Efficiency for the $56.0^{\circ}-60.0^{\circ}$ zenith angle bin together with the preliminary fit and the 4 and 5 parameter models.
         \label{fig:zenithSingle}}
-        \vspace{-0.5cm}
-    \end{center}
-\end{figure}
-
-\begin{figure}[h]
-    \begin{center}
-        \includegraphics[width=0.6\textwidth]{plots/Surface.pdf}
-        \caption{Efficiency as function of the Energy and zenith angle and the $97\%$ surface level.
-        \label{fig:surface}}
         \vspace{-0.5cm}
     \end{center}
 \end{figure}
@@ -206,7 +197,19 @@ In order to compare the results, the 4 and 5 parameter fits were evaluated in th
 
 with $p_0=18.03$ $p_1=-0.91$, $p_2=1.45$, $b_0=0.336$, $b_1=-0.068$. We are working to have a better understanding of the errors associated with this adjustment.
 
-\begin{table}[]
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{plots/Surface.pdf}
+        \caption{Efficiency as function of the Energy and zenith angle and the $97\%$ surface level.
+        \label{fig:surface}}
+        \vspace{-0.5cm}
+    \end{center}
+\end{figure}
+
+Figure \ref{fig:surface} shows the surface plot of the efficiency as a function of the energy and the zenith angle. The efficiency is lower for the vertical events, increasing and reaching a maximum at approximately $30^{\circ}$ and then decreasing for the most inclined events. The $97\%$ efficiency threshold ranges from $10^{18.5}\eV$ improving to almost $10^{18.3}\eV$ at $30^{\circ}$ and then decreases. This behaviour is in accordance to the model proposed in \cite{VerticalSpectrum}.
+
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{l|ccccc}
         & \textbf{$p_0$} & \textbf{$p_1$} & \textbf{$p_2$} & \textbf{$b_0$} & \textbf{$b_1$} \\ \hline
@@ -219,7 +222,6 @@ with $p_0=18.03$ $p_1=-0.91$, $p_2=1.45$, $b_0=0.336$, $b_1=-0.068$. We are work
 \label{tab:parameters}
 \end{table}
 
-Figure \ref{fig:surface} shows the surface plot of the efficiency as a function of the energy and the zenith angle. The efficiency is lower for the vertical events, increasing and reaching a maximum at approximately $30^{\circ}$ and then decreasing for the most inclined events. The $97\%$ efficiency threshold ranges from $10^{18.5}\eV$ improving to almost $10^{18.3}\eV$ at $30^{\circ}$ and then decreases. This behaviour is in accordance to the model proposed in \cite{VerticalSpectrum}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%New Triggers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -239,6 +241,9 @@ In order to do that, the events were reconstructed using the Trunk version 33753
 \end{figure}
 
 When including the new triggers in the whole zenith range, from $0^{\circ}$ to $60^{\circ}$ the efficiency increases and the full efficiency starts at $1.25\times10^{18}\eV$, three energy bins lower than using only the original triggers. When the zenith angle dependency is brought into consideration, the efficiency shows a stronger dependency with the inclusion of the new triggers. This is expected, since the electromagnetic component of the shower suffer stronger attenuation because of the further distance travelled in the atmosphere. From this, we propose a modification in the acceptance angle for the events, lowering the maximum zenith angle to $45^{\circ}$. Figure \ref{fig:NewCut} shows the efficiency including the new triggers with and without the new acceptance angle, compared to the reconstruction only including the original triggers. This modification yields to being able to report the spectrum from $10^{18}\eV$, gaining four bins with respect to the current spectrum measurements.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%Spectrum%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \section{Efficiency correction of the SD1500 Spectrum}
 \label{sec:spectrum}
